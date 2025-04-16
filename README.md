@@ -1,4 +1,4 @@
-# Yocto BeagleBone AI-64 manifest
+# Yocto BeagleBone AI-64 Build
 
 ## Creating Yocto Source directory with Repo Tool:
 
@@ -25,4 +25,16 @@ $ repo init -u https://github.com/Nueralspace/bbi64_ai_yocto_build.git -b scarth
 
 ```
 $ repo sync
+```
+## Setup the environment
+
+```bash
+$ cp setup_env.sh sources/
+$ ./setup_env.sh
+```
+## Build Image
+
+```bash
+$ source poky/oe-init-build-env
+$ bitbake < image_name >
 ```
