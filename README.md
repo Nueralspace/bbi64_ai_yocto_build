@@ -1,6 +1,6 @@
 # Yocto BeagleBone AI-64 Build
 
-## Creating Yocto Source directory with Repo Tool:
+## Creating Yocto Source directory with Repo Tool
 
 ### Setup repo tool
 
