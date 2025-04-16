@@ -13,7 +13,7 @@ $ chmod a+x ./repo
 ### Run below command to fetch manifest from repository
 
 ```bash
-$ repo init -u https://github.com/Nueralspace/bbi64_ai_yocto_build.git -b scarthgap -m bbi64_ai_yocto_build
+$ repo init -u https://github.com/Nueralspace/bbi64_ai_yocto_build.git -b scarthgap -m bbi64_ai_yocto_build.xml
 ```
 
 ### Sync the repository
