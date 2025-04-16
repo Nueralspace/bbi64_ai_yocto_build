@@ -15,7 +15,7 @@ $ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
 $ chmod a+rx ~/.bin/repo
 ```
 
-### Run below command to fetch manifest from repository
+### Run repo init to fetch manifest from repository
 
 ```bash
 $ repo init -u https://github.com/Nueralspace/bbi64_ai_yocto_build.git -b scarthgap -m bbi64_ai_yocto_build.xml
