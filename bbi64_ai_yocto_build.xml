@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote name="oe" fetch="git://git.openembedded.org/"/>
-  <remote name="yocto" fetch="https://git.yoctoproject.org/git"/>
-  <remote name="qt5" fetch="https://github.com/meta-qt5/"/>
+  <!-- Define remotes with scarthgap as the default revision -->
+  <remote name="oe" fetch="git://git.openembedded.org/" revision="scarthgap"/>
+  <remote name="yocto" fetch="https://git.yoctoproject.org/git" revision="scarthgap"/>
+  <remote name="qt5" fetch="https://github.com/meta-qt5/" revision="scarthgap"/>
   
+  <!-- Projects now explicitly use the scarthgap branch -->
   <project name="meta-openembedded" path="sources/meta-openembedded" remote="oe" revision="scarthgap" />
   <project name="openembedded-core" path="sources/openembedded-core" remote="oe" revision="scarthgap" />
   <project name="meta-ti" path="sources/meta-ti" remote="yocto" revision="scarthgap" />
