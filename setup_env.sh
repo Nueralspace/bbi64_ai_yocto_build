@@ -6,7 +6,7 @@ source poky/oe-init-build-env
 
 # The build environment sets the working directory to the build directory.
 BUILD_DIR="${PWD}"
-PROJECT_ROOT="$(dirname "${BUILD_DIR}")"  # assumes build dir is a sibling of poky
+PROJECT_ROOT="$(dirname "${BUILD_DIR}")"
 
 BBLAYERS_CONF="${BUILD_DIR}/conf/bblayers.conf"
 LOCAL_CONF="${BUILD_DIR}/conf/local.conf"
@@ -25,8 +25,6 @@ LAYERS="BBLAYERS ?= \" \\
 
 echo "Updating bblayers.conf at ${BBLAYERS_CONF} ..."
 # Replace the existing BBLAYERS entry with the updated list
-#sed -E -i '/^BBLAYERS[[:space:]]*\?=/,/^[[:space:]]*"[[:space:]]*$/d' "${BBLAYERS_CONF}"
-
 sed -E -i '/^BBLAYERS[[:space:]]*\?=/,/^[[:space:]]*"[[:space:]]*$/d' "${BBLAYERS_CONF}"
 
 echo -e "\n${LAYERS}" >> "${BBLAYERS_CONF}"
