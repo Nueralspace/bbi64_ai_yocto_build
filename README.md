@@ -5,9 +5,14 @@
 ### Setup repo tool
 
 ```bash
-$ cd ~/bin
-$ wget https://storage.googleapis.com/git-repo-downloads/repo
-$ chmod a+x ./repo
+# Debian/Ubuntu.
+$ sudo apt-get install repo
+
+# Install Manually
+$ mkdir -p ~/.bin
+$ PATH="${HOME}/.bin:${PATH}"
+$ curl https://storage.googleapis.com/git-repo-downloads/repo > ~/.bin/repo
+$ chmod a+rx ~/.bin/repo
 ```
 
 ### Run below command to fetch manifest from repository
